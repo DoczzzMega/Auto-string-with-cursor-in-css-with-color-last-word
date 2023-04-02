@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+  }
+  
+  *, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  
+
+#string {
+    font-size: 40px;
+    margin: 100px;
+    /* text-decoration: underline; */
+}
+
+#button {
+    padding: 15px 8px;
+    margin-left: 100px;
+}
+
+
+
+
+#string {
+  width: 900px;
+  height: 40px;
+}
+
+#string::after {
+  content: '';
+  display: inline-block;
+  position: absolute;
+  height: 38px;
+  border: 1px solid rgb(76, 81, 85);
+  margin: 8px 0px 0px 3px;
+
+}
+
+#string.blink::after {
+  content: '';
+  display: none;
+}
+
+span {
+  color: red;
+}
